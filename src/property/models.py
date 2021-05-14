@@ -35,8 +35,8 @@ class Property(models.Model):
     name = models.CharField(verbose_name='Property Name', max_length=100)
 
     # characteristics
-    rent_cost = models.DecimalField(max_digits=8, decimal_places=2, verbose_name="Property rent price", blank=True)
-    primary_cost = models.DecimalField(max_digits=8, decimal_places=2, verbose_name="Property price")
+    rent_cost = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Property rent price", blank=True)
+    primary_cost = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Property price")
     bedrooms = models.IntegerField()
     kitchen = models.IntegerField()
     bathroom = models.IntegerField()
